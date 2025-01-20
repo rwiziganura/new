@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        body {
+            background: radial-gradient(rgb(21, 21, 72), rgb(18, 55, 18)) no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .cont {
+            background-color: cadetblue;
+            width: 50%;
+            border-radius: 40px;
+            margin: auto;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+        }
+        
+        .tete {
+            background-image: url(Screenshot_20240303-221948.png);
+            border-radius: 50%;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tete">
+        <div class="cont">
+            <div class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        const hrs = document.getElementById("hrs");
+        const min = document.getElementById("min");
+        const sec = document.getElementById("sec");
+
+        setInterval(() => {
+            const newtime = new Date();
+            hrs.innerHTML = String(newtime.getHours()).padStart(2, '0');
+            min.innerHTML = String(newtime.getMinutes()).padStart(2, '0');
+            sec.innerHTML = String(newtime.getSeconds()).padStart(2, '0');
+        }, 1000);
+    </script>
+</body>
+
+</html>

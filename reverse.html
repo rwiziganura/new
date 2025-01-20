@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: radial-gradient(black, rgb(2, 62, 81));
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .navigation {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: xx-large;
+            background: radial-gradient(rgb(72, 35, 35), rgb(2, 62, 81));
+            filter: drop-shadow(0 0 10px rgb(119, 119, 230));
+            animation: fiter 20s ease infinite;
+        }
+        
+        @keyframes fiter {
+            0% {
+                filter: drop-shadow(0 0 10px rgb(119, 119, 230));
+            }
+            10% {
+                filter: drop-shadow(0 0 10px rgb(175, 102, 68));
+            }
+            20% {
+                filter: drop-shadow(0 0 10px rgb(57, 169, 128));
+            }
+            30% {
+                filter: drop-shadow(0 0 10px rgb(99, 166, 31));
+            }
+            40% {
+                filter: drop-shadow(0 0 10px rgb(190, 29, 185));
+            }
+            50% {
+                filter: drop-shadow(0 0 10px rgb(155, 12, 74));
+            }
+            60% {
+                filter: drop-shadow(0 0 10px rgb(15, 78, 160));
+            }
+            70% {
+                filter: drop-shadow(0 0 10px rgb(39, 198, 3));
+            }
+            80% {
+                filter: drop-shadow(0 0 10px rgb(8, 218, 237));
+            }
+            90% {
+                filter: drop-shadow(0 0 10px rgb(207, 10, 73));
+            }
+            100% {
+                filter: drop-shadow(0 0 10px rgb(127, 5, 140));
+            }
+        }
+        
+        ul {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            padding: 14px 14px;
+            margin: auto;
+        }
+        
+        li {
+            overflow: hidden;
+        }
+        
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 15px;
+            position: relative;
+            display: inline-block;
+            transition: background-color 0.5s ease, transform 0.5s ease;
+            filter: drop-shadow(0 0 10px rgb(119, 119, 230));
+        }
+        
+        a:hover .stars {
+            transform: scale(1.1);
+            animation: rene 5s;
+            display: block;
+            filter: drop-shadow(0 0 10px rgb(119, 119, 230));
+        }
+        
+        @keyframes rene {
+            0% {
+                width: 0;
+                left: 0;
+                background: rebeccapurple;
+            }
+            50% {
+                width: 100%;
+                left: 0;
+                background-color: brown;
+            }
+            100% {
+                width: 0;
+                left: 100%;
+                background: radial-gradient(rgb(0, 79, 100), rgb(128, 0, 124));
+            }
+        }
+        
+        a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: rgb(0, 255, 127);
+            animation: underlineAnimation 2s ease infinite;
+        }
+        
+        @keyframes underlineAnimation {
+            0% {
+                width: 0;
+                left: 0;
+                background: rgb(202, 190, 19);
+                box-shadow: 5px 5px 5px rgb(73, 30, 30);
+            }
+            10% {
+                width: 100%;
+                left: 0;
+                background-color: rgb(149, 229, 10);
+            }
+            20% {
+                width: 100%;
+                left: 0;
+                background-color: rgb(2, 88, 86);
+            }
+            30% {
+                width: 100%;
+                left: 0;
+                background-color: rgb(79, 3, 67);
+            }
+            40% {
+                width: 100%;
+                left: 0;
+                background-color: rgb(49, 77, 0);
+            }
+            50% {
+                width: 100%;
+                left: 0;
+                background-color: rgb(173, 18, 103);
+            }
+            60% {
+                width: 100%;
+                left: 0;
+                background-color: rgb(210, 215, 202);
+            }
+            70% {
+                transform: rotate(360deg);
+                border-radius: 50%;
+                width: 100%;
+                left: 0;
+                background-color: rgb(5, 103, 145);
+            }
+            80% {
+                width: 100%;
+                left: 0;
+                background-color: rgb(176, 49, 3);
+            }
+            90% {
+                width: 100%;
+                left: 0;
+                background-color: rgb(25, 28, 21);
+                transform: rotate(360deg);
+                border-radius: 100%;
+            }
+            100% {
+                width: 0;
+                left: 100%;
+                background: radial-gradient(rgb(0, 3, 2), rgb(0, 55, 128));
+            }
+        }
+        
+        .cont {
+            background: radial-gradient(rgb(72, 35, 35), rgb(2, 62, 81));
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            padding: 20PX;
+            margin: 30px;
+            height: 500px;
+        }
+        
+        .v {
+            flex: 1;
+            border-radius: 2px solid black;
+            padding: 30px;
+            margin: 30px;
+            border: 3px saddlebrown;
+            background-color: rgb(8, 99, 104);
+            height: 100px;
+            box-shadow: 5px 5px 5px rgb(142, 128, 128);
+            animation: unde 2s;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: xx-large;
+        }
+        
+        @keyframes unde {
+            0% {
+                opacity: 0;
+                background: rgb(176, 0, 144);
+                box-shadow: 5px 5px 5px rgb(73, 30, 30);
+            }
+            100% {
+                background: radial-gradient(rgb(0, 3, 2), rgb(0, 55, 128));
+            }
+        }
+        
+        .v:hover {
+            background-color: rgb(113, 66, 4);
+            color: azure;
+            width: 500px;
+        }
+        
+        .gar {
+            color: aliceblue;
+            background: radial-gradient(rgb(89, 252, 195), rgb(251, 81, 245), rgb(248, 86, 86));
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        footer {
+            font-size: xx-large;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <ul>
+
+                    <li><a href="#jjj">home🏠</a></li>
+                    <li><a href="#ww">about📙</a></li>
+                    <li><a href="#kk">moreⓂ️</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="gar">
+            <h1>WELCOME TO THIS INTERFACE</h1>
+        </div>
+        <div class="cont">
+            <div class="v">
+                <a href="fameset.html">IMAGE1
+                    <img src="IMG_9616 (1).jpg" alt="" width="150px" height="150px">
+                </a>
+            </div>
+            <div class="v">
+                <a href="">IMAGE2
+                    <img src="rene.jpg" alt="" width="150px" height="150px">
+                </a>
+            </div>
+            <div class="v">
+                <a href="renekkk.html">VIDEOS</a>
+            </div>
+        </div>
+        <div>
+            <span>
+            
+        </span>
+        </div>
+    </section>
+    <footer>
+        conatct us: 079425261727<br> email: dede@gmail.com
+    </footer>
+</body>
+
+</html>

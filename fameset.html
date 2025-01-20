@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Prefix Example</title>
+    <style>
+        /* Style for the box */
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            /* Background with linear gradient */
+            background: -webkit-linear-gradient(to right, red, blue);
+            /* WebKit browsers */
+            background: -moz-linear-gradient(to right, red, blue);
+            /* Mozilla browsers */
+            background: linear-gradient(to right, red, blue);
+            /* Standard */
+            /* Rounded corners */
+            -webkit-border-radius: 20px;
+            /* WebKit browsers */
+            -moz-border-radius: 20px;
+            /* Mozilla browsers */
+            border-radius: 20px;
+            /* Standard */
+            /* Box shadow */
+            -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            /* WebKit browsers */
+            -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            /* Mozilla browsers */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            /* Standard */
+            /* Transform */
+            -webkit-transform: rotate(5deg);
+            /* WebKit browsers */
+            -moz-transform: rotate(5deg);
+            /* Mozilla browsers */
+            transform: rotate(5deg);
+            /* Standard */
+        }
+        
+        .box:hover {
+            /* Background with linear gradient */
+            background: -webkit-linear-gradient(to right, rgb(9, 154, 14), rgb(207, 4, 129));
+            /* WebKit browsers */
+            background: -moz-linear-gradient(to right, rgb(118, 17, 185), rgb(6, 73, 128));
+            /* Mozilla browsers */
+            background: linear-gradient(to right, rgb(136, 180, 26), rgb(104, 0, 101));
+            /* Standard */
+            /* Rounded corners */
+            -webkit-border-radius: 30px;
+            /* WebKit browsers */
+            -moz-border-radius: 30px;
+            /* Mozilla browsers */
+            border-radius: 20px;
+            /* Standard */
+            /* Box shadow */
+            -webkit-box-shadow: 0 4px 10px rgba(95, 93, 93, 0.5);
+            /* WebKit browsers */
+            -moz-box-shadow: 0 4px 10px rgba(42, 33, 33, 0.5);
+            /* Mozilla browsers */
+            box-shadow: 0 4px 10px rgba(36, 28, 28, 0.5);
+            /* Standard */
+            /* Transform */
+            -webkit-transform: rotate(10deg);
+            /* WebKit browsers */
+            -moz-transform: rotate(20deg);
+            /* Mozilla browsers */
+            transform: rotate(20deg);
+            /* Standard */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Hello, CSS!</div>
+</body>
+
+</html>
